@@ -99,7 +99,6 @@ def main():
   find_and_replace(args, './module-app/pom.xml', '<version>.+</version>', f'<version>{target_version}</version>')
   find_and_replace(args, './template/pom.xml', '<version>.+</version>', f'<version>{target_version}</version>')
   find_and_replace(args, './pom.xml', '<version>.+</version>', f'<version>{target_version}</version>')
-  find_and_replace(args, './pom.xml', '\t\t<version>.+</version>', f'    <version>{spring_boot_version}</version>')
 
   print(f'Updating parent artifact IDs...')
   find_and_replace(args, './module-app/pom.xml', '<artifactId>backend-module-template</artifactId>', f'<artifactId>backend-module-{args.name}</artifactId>')
