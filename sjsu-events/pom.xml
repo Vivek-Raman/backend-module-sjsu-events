@@ -45,6 +45,12 @@
       <version>${monolith-common.version}</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>dev.vivekraman</groupId>
+      <artifactId>localist-java-sdk</artifactId>
+      <version>1.0-rc2</version>
+    </dependency>
+
   </dependencies>
 
 </project>
